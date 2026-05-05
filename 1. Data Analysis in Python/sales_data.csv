@@ -21,7 +21,7 @@ Transaction ID,Date,Product Category,Product Name,Units Sold,Unit Price,Total Re
 10020,2024-01-20,Home Appliances,Ninja Professional Blender,1,99.99,99.99,Europe,PayPal
 10021,2024-01-21,Clothing,Zara Summer Dress,3,59.99,179.97,Asia,Debit Card
 10022,2024-01-22,Books,Gone Girl by Gillian Flynn,2,22.99,45.98,North America,Credit Card
-10023,2024-01-23,Beauty Products,Olay Regenerist Face Cream,1,49.99,49.99,Europe,PayPal
+10023,2024-01-23,Beauty Products,Olay Regenerist Face Cream,1,49.99,,Europe,PayPal
 10024,2024-01-24,Sports,Adidas FIFA World Cup Football,3,29.99,89.97,Asia,Credit Card
 10025,2024-01-25,Electronics,Bose QuietComfort 35 Headphones,1,299.99,299.99,North America,Credit Card
 10026,2024-01-26,Home Appliances,Panasonic NN-SN966S Microwave,1,179.99,179.99,Europe,PayPal
