@@ -40,5 +40,22 @@ def success(score):
     return render_template("result.html", result=res)
 
 
+@app.route("/successres/<int:score>")
+def successres(score):
+    res = ""
+    if score >= 50:
+        res = "PASSED"
+    else:
+        res = "FAILED"
+
+    exp = {"Score": score, "Res": res}
+    return render_template("result1.html", results=exp)
+
+
+@app.route("/getresults", methods=["GET", "POST"])
+def getresults():
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
