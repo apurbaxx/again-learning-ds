@@ -39,6 +39,26 @@ def successres(score):
     exp = {"score"  : score, "result": res}
     return render_template("successres.html", results=exp)
 
+@app.route("/getresult", methods=["GET", "POST"])
+def getresult():
+    total_score = 0
+    if request.method == "POST":
+        science = float(request.form["science"])
+        maths = float(request.form["maths"])
+        english = float(request.form["english"])
+        total_score = science + maths + english
+    return render_template("getresult.html")
+
+
+@app.route("/submit2", methods=["GET", "POST"])
+def submit2():
+    total_score = 0
+    if request.method == "POST":
+        science = float(request.form["science"])
+        maths = float(request.form["maths"])
+        english = float(request.form["english"])
+        total_score = science + maths + english
+    return "<html><body><h1>Total Score: {}</h1></body></html>".format(total_score)
 
 if __name__ == "__main__":
     app.run(debug=True)
